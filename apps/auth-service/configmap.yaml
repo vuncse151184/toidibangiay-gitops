@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auth-service-config
+  namespace: toidibangiay-prod
+data:
+  SMTP_FROM: "Tôi Đi Bán Giày <no-reply@toidibangiay.vn>"
+  NODE_ENV: "production"
+  SMTP_SECURE: "false"
+  JWT_ACCESS_TTL_SECONDS: "900"
+  SMTP_PORT: "587"
+  REFRESH_TOKEN_TTL_DAYS: "30"
+  PORT: "3002"
+  COOKIE_SAME_SITE: "none"
+  SMTP_HOST: "smtp.gmail.com"
+  COOKIE_SECURE: "true"
+  FRONTEND_URL: "https://toidibangiay.vn"

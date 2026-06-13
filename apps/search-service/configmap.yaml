@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: search-service-config
+  namespace: toidibangiay-prod
+data:
+  PORT: "3008"
+  NODE_ENV: "production"
+  OPENSEARCH_ENDPOINT: "http://opensearch:9200"
+  RABBITMQ_URL: "amqp://admin:admin@rabbitmq:5672"

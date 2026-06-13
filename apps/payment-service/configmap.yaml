@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payment-service-config
+  namespace: toidibangiay-prod
+data:
+  PORT: "3006"
+  NODE_ENV: "production"
+  ORDER_SERVICE_URL: "http://order-service:3004"
+  API_BASE_URL: "https://api.toidibangiay.vn"
+  NOTIFICATION_SERVICE_URL: "http://notification-service:3007"
+  VNPAY_URL: "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html"
+  FRONTEND_URL: "https://toidibangiay.vn"

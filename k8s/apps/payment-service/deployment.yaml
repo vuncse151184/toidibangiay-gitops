@@ -6,7 +6,7 @@ metadata:
   labels:
     app: payment-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: payment-service
@@ -41,17 +41,4 @@ spec:
             limits:
               memory: "512Mi"
               cpu: "500m"
-          livenessProbe:
-            httpGet:
-              path: /health
-              port: 3006
-            initialDelaySeconds: 30
-            periodSeconds: 10
-            failureThreshold: 3
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: 3006
-            initialDelaySeconds: 10
-            periodSeconds: 5
       terminationGracePeriodSeconds: 30

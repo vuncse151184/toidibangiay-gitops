@@ -6,7 +6,7 @@ metadata:
   labels:
     app: cart-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: cart-service
@@ -41,17 +41,4 @@ spec:
             limits:
               memory: "512Mi"
               cpu: "500m"
-          livenessProbe:
-            httpGet:
-              path: /health
-              port: 3003
-            initialDelaySeconds: 30
-            periodSeconds: 10
-            failureThreshold: 3
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: 3003
-            initialDelaySeconds: 10
-            periodSeconds: 5
       terminationGracePeriodSeconds: 30

@@ -4,7 +4,6 @@ resources:
   - configmap.yaml
   - deployment.yaml
   - service.yaml
-  - hpa.yaml
 images:
   - name: PLACEHOLDER_IMAGE
     newName: 061083040425.dkr.ecr.us-east-2.amazonaws.com/user-service

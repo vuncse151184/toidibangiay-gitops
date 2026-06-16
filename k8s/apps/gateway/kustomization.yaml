@@ -8,4 +8,4 @@ resources:
 images:
   - name: PLACEHOLDER_IMAGE
     newName: 061083040425.dkr.ecr.us-east-2.amazonaws.com/gateway
-    newTag: 80ac8d179ac32f7448dfdafefd51b84f2c6c369d
+    newTag: 7cc66384718a125bf3600d181a3a6522d893759f

@@ -7,4 +7,4 @@ resources:
 images:
   - name: PLACEHOLDER_IMAGE
     newName: 061083040425.dkr.ecr.us-east-2.amazonaws.com/search-service
-    newTag: 52b48e39e6be7196448dd212155da7bad69730b8
+    newTag: 3f2bdffae47665eab2dff0082239f88eaacd9abb

@@ -7,4 +7,4 @@ resources:
 images:
   - name: PLACEHOLDER_IMAGE
     newName: 061083040425.dkr.ecr.us-east-2.amazonaws.com/inventory-service
-    newTag: eb4f430c33aeaa35640b87b6e97ed3ad656cf874
+    newTag: 0ea57e177ea44cb7ba30ecfeaf93357d2726b303

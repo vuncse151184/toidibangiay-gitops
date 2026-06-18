@@ -6,9 +6,11 @@ metadata:
   labels:
     app: cloudflared-tunnel
 spec:
-  # 2 replicas so a pod restart never drops the tunnel (the hostname stays
-  # stable either way; this just removes the brief reconnect gap).
-  replicas: 2
+  # 1 replica: the EKS nodes are at their max-pods cap ("Too many pods"), so a
+  # 2nd replica stays Pending forever and blocks the rollout. The named-tunnel
+  # hostname is stable regardless of pod count. Bump to 2 only after adding node
+  # capacity (or raising max-pods / using prefix delegation on the VPC CNI).
+  replicas: 1
   selector:
     matchLabels:
       app: cloudflared-tunnel

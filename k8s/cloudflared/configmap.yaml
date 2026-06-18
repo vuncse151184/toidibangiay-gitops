@@ -9,7 +9,7 @@ data:
   # Named tunnel config. Stable hostname survives pod restarts (unlike a quick
   # `--url` tunnel, which gets a random *.trycloudflare.com name each restart).
   config.yaml: |
-    tunnel: 798afb21-1ee1-45fc-99ed-ce7d0eb811ed
+    tunnel: 8cb9ed7e-8d9e-4db6-94e0-6002f4e42c1f
     credentials-file: /etc/cloudflared/creds/credentials.json
     metrics: 0.0.0.0:2000
     no-autoupdate: true

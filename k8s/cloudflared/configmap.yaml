@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cloudflared-config
+  namespace: toidibangiay-prod
+  labels:
+    app: cloudflared-tunnel
+data:
+  # Named tunnel config. Stable hostname survives pod restarts (unlike a quick
+  # `--url` tunnel, which gets a random *.trycloudflare.com name each restart).
+  config.yaml: |
+    tunnel: 798afb21-1ee1-45fc-99ed-ce7d0eb811ed
+    credentials-file: /etc/cloudflared/creds/credentials.json
+    metrics: 0.0.0.0:2000
+    no-autoupdate: true
+    ingress:
+      - hostname: api.toidibangiay.shop
+        service: http://gateway.toidibangiay-prod.svc.cluster.local:4000
+      # Catch-all required by cloudflared — must be last.
+      - service: http_status:404

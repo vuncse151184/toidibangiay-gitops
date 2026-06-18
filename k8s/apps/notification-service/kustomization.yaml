@@ -7,4 +7,4 @@ resources:
 images:
   - name: PLACEHOLDER_IMAGE
     newName: 061083040425.dkr.ecr.us-east-2.amazonaws.com/notification-service
-    newTag: 7cc66384718a125bf3600d181a3a6522d893759f
+    newTag: 08bba47d461ff1498ddaf84bb7064c8ba2493016

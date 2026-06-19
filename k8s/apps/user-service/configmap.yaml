@@ -8,6 +8,6 @@ data:
   NODE_ENV: "production"
   COOKIE_SECURE: "true"
   COOKIE_SAME_SITE: "none"
-  FRONTEND_URL: "https://toidibangiay.vn"
+  FRONTEND_URL: "https://toidibangiay.shop"
   REFRESH_TOKEN_TTL_DAYS: "30"
   JWT_ACCESS_TTL_SECONDS: "900"

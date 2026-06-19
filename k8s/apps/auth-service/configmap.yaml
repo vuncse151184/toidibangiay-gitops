@@ -14,4 +14,4 @@ data:
   COOKIE_SAME_SITE: "none"
   SMTP_HOST: "smtp.gmail.com"
   COOKIE_SECURE: "true"
-  FRONTEND_URL: "https://toidibangiay.vn"
+  FRONTEND_URL: "https://toidibangiay.shop"
